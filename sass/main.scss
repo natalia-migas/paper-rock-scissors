@@ -1,0 +1,100 @@
+@import "_variabless";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+}
+
+body {
+  background: #000 url(../img/bg.jpg) no-repeat top center;
+  background-size: cover;
+  color: #fff;
+  font-size: 15px;
+  font-family: $font1;
+  overflow-x: hidden;
+  text-align: center;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.btns-wrapper {
+  padding-top: 100px;
+  @media (max-width: 767px) {
+    padding-top: 50px;
+  }
+}
+
+button {
+  cursor: pointer;
+  height: 60px;
+  width: 200px;
+  font-size: 16px;
+  border-radius: 4px;
+  @include transition;
+  margin: 0 10px;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  font-family: $font1;
+  font-weight: bold;
+  @media (max-width: 767px) {
+    margin-bottom: 15px;
+  }
+  &:hover,
+  &:focus,
+  &:active,
+  &:active:focus,
+  &:active:hover {
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.8);
+    color: #080065;
+    box-shadow: none;
+  }
+}
+
+.log-window {
+  min-height: 300px;
+  width: 60%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  margin: 150px auto 0;
+  padding: 20px;
+  text-align: left;
+  @media (max-width: 767px) {
+    margin-top: 50px;
+  }
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  padding: 20px 0;
+  font-size: 15px;
+  text-align: center;
+  @media (max-width: 767px) {
+    position: static;
+    margin-top: 10px;
+  }
+  a {
+    color: #fff;
+  }
+}
+
+
+
+
+
+
+// /*992 - 1199 md*/
+// @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+// }
+// /*768 - 991 sm*/
+// @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+// }
+// /*767 and less xs*/
+// @media (max-width: $screen-xs-max) {
+// }
