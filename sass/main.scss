@@ -26,7 +26,7 @@ body {
   }
 }
 
-button {
+.btn {
   cursor: pointer;
   height: 60px;
   width: 200px;
@@ -66,9 +66,12 @@ button {
   @media (max-width: 767px) {
     margin-top: 50px;
   }
+  li {
+    list-style: none;
+  }
 }
 
-footer {
+.footer {
   position: fixed;
   width: 100%;
   bottom: 0;

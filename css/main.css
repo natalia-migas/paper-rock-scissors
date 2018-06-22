@@ -21,7 +21,7 @@ body {
     .btns-wrapper {
       padding-top: 50px; } }
 
-button {
+.btn {
   cursor: pointer;
   height: 60px;
   width: 200px;
@@ -38,9 +38,9 @@ button {
   font-family: "Open Sans Condensed", sans-serif;
   font-weight: bold; }
   @media (max-width: 767px) {
-    button {
+    .btn {
       margin-bottom: 15px; } }
-  button:hover, button:focus, button:active, button:active:focus, button:active:hover {
+  .btn:hover, .btn:focus, .btn:active, .btn:active:focus, .btn:active:hover {
     text-decoration: none;
     background: rgba(255, 255, 255, 0.8);
     color: #080065;
@@ -59,8 +59,10 @@ button {
   @media (max-width: 767px) {
     .log-window {
       margin-top: 50px; } }
+  .log-window li {
+    list-style: none; }
 
-footer {
+.footer {
   position: fixed;
   width: 100%;
   bottom: 0;
@@ -68,8 +70,8 @@ footer {
   font-size: 15px;
   text-align: center; }
   @media (max-width: 767px) {
-    footer {
+    .footer {
       position: static;
       margin-top: 10px; } }
-  footer a {
+  .footer a {
     color: #fff; }
